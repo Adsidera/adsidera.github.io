@@ -1,0 +1,339 @@
+
+/******************
+*   Body Aspect   *
+*******************/
+body {
+    margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: 'Raleway', Calibri, Arial, sans-serif;
+    font-size: 16px;
+}
+.navbar-brand {
+    text-transform: uppercase;
+}
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+.large-header {
+   position: relative;
+   width: 100%;
+   background: #111;
+   overflow: hidden;
+   background-size: cover;
+   background-position: center center;
+   z-index: 1;
+   background-color: rgba(17,40,101,0.5);
+   -webkit-background-color: rgba(17,40,101,0.5);
+   -moz-background-color: rgba(17,40,101,0.5);
+    -o-background-color:rgba(17,40,101,0.5);
+}
+
+.demo .large-header {
+   background-image: url("../img/milkyway_rainbow.jpg");
+}
+
+.main-title {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   color: #F9F1E9;
+   text-align: center;
+   top: 45%;
+   left: 50%;
+   -moz-transform: translate3d(-50%, -50%, 0);
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+
+}
+
+.demo .main-title {
+   text-transform: uppercase;
+   font-size: 4.2em;
+   letter-spacing: 0.1em;
+
+}
+
+.main-title .thin {
+   font-weight: 200;
+   -moz-font-weight: 200;
+   -webkit-font-weight:200;
+}
+.main-title .thin2 {
+    font-size: 0.7em;
+    -moz-font-weight: 0.5em;
+    -webkit-font-weight:0.5em;
+}
+.container-intro{
+    font-size:1.6em;
+    text-align: center;
+    color: white;
+    margin-top: 0;
+    z-index: 2;
+}
+.leadh2{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+#curious{
+    margin-left: 0;
+    margin-bottom: -13%;
+    padding-top: 15%;
+}
+
+.octocat{
+    float:right;
+}
+/**************
+*  Navigation *
+**************/
+.nav, .nav-bar{
+  float:right;
+}
+.navbar-brand{
+  font-family: 'Pattaya', serif;
+  text-transform: none;
+  font-size: 1.5em;
+}
+#logo{
+  color: white;
+}
+
+/**************
+*  Portfolio  *
+**************/
+
+a:-webkit-any-link{
+    text-decoration: none;
+}
+.img-portfolio{
+    width: 420px;
+    height:300px;
+}
+.project{
+    padding:0;
+}
+
+/**************
+*    Footer   *
+**************/
+
+footer {
+    position: absolute;
+    margin: 0px 0px 0;
+    padding: 20px;
+    background-color: darkgrey;
+    width: 100%;}
+footer p {
+    line-height: 0.9;
+    font-weight: 200;
+    font-size: 0.8em;
+}
+
+
+/*******************
+*   MediaQueries   *
+*******************/
+@media only screen and (max-width: 768px) {
+   .demo .main-title {
+      font-size: 3em;
+   }
+}
+.header-image {
+    display: block;
+    width: 100%;
+    text-align: right;
+    background-image: url(../img/sfondobanner.png);
+    /*background-color: rgba(51,172,196,3);*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.headline {
+    padding: 120px 0;
+
+}
+
+.headline h1 {
+    font-size: 130px;
+    text-shadow: 4px 4px 7px rgba(150, 150, 150, 0.7);
+}
+
+.headline h2 {
+    font-size: 77px;
+
+}
+
+.featurette-divider {
+    margin: 80px 0;
+}
+
+.featurette {
+    overflow: hidden;
+}
+.featurette-image {
+    width: 400px;
+    height: 400px;
+}
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+
+.featurette-image.pull-right {
+    margin-left: 40px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.featurette-heading {
+    font-size: 50px;
+}
+
+.container-contact {
+    background-color: darkgrey;
+    margin-left: 0;
+    margin-right:0;
+    padding-left: 0;
+    padding-right:0;
+}
+
+@media(max-width:1200px) {
+    .headline h1 {
+        font-size: 140px;
+    }
+
+    .headline h2 {
+        font-size: 63px;
+    }
+
+    .featurette-divider {
+        margin: 50px 0;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 20px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 20px;
+    }
+
+    .featurette-heading {
+        font-size: 35px;
+    }
+}
+
+@media(max-width:991px) {
+    .headline h1 {
+        font-size: 105px;
+    }
+
+    .headline h2 {
+        font-size: 50px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-image {
+        max-width: 50%;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 10px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 10px;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        margin: 0 15px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-heading {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:668px) {
+    .headline h1 {
+        font-size: 70px;
+    }
+
+    .headline h2 {
+        font-size: 32px;
+    }
+
+    .featurette-divider {
+        margin: 30px 0;
+    }
+}
+
+@media(max-width:640px) {
+    .headline {
+        padding: 75px 0 25px 0;
+    }
+
+    .headline h1 {
+        font-size: 60px;
+    }
+
+    .headline h2 {
+        font-size: 30px;
+    }
+     .featurette-divider {
+         padding-bottom: 30px;
+     }
+}
+@media(max-width:414px){
+    .featurette-image{
+        max-width: 100%;
+        height: 80%;
+    }
+    .featurette-heading{
+    padding-top: 10px;
+    }
+    .featurette-image.pull-right {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .featurette-image.pull-left {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:375px) {
+    .featurette-divider {
+        margin: 10px 0;
+        padding: 0;
+
+    }
+
+    .featurette-image {
+        max-width: 100%;
+        height: 80%;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .featurette-image.pull-right {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+}
