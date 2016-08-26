@@ -7,6 +7,14 @@ body {
     font-family: 'Raleway', Calibri, Arial, sans-serif;
     font-size: 16px;
 }
+
+.big a:hover, .big a:focus{
+    font-size: 1.4em;
+    color: black;
+}
+.leadfirst p{
+    text-align: justify;
+}
 .navbar-brand {
     text-transform: uppercase;
 }
@@ -103,9 +111,53 @@ body {
 *  Portfolio  *
 **************/
 
-a:-webkit-any-link{
+a{
     text-decoration: none;
+    color: #333;
 }
+ .bluea, .greena, .orangea, .blacka, .darkreda, .firebricka, .darkorangea, .indigoa{
+    border-bottom: 1px dotted grey;
+    border-bottom-style: dashed;}
+.big a:-webkit-any-link:hover, a:-webkit-any-link:focus{
+    font-size: 1.4em;
+}
+.big:hover, .big:focus, .bluea:hover, .bluea:focus, .greena:hover, .greena:focus, .orangea:hover, .orangea:focus, .blacka:hover, .blacka:focus, .darkreda:hover, darkreda:focus, .firebricka:hover, .firebricka:focus, .darkorangea:hover, .darkorangea:focus, .indigoa:hover,.indigoa:focus{
+    font-size: 1.4em;
+    text-decoration:none;
+    font-weight: 400;
+    border-bottom: none;
+}
+.bluea:hover, .bluea:focus{
+    color: midnightblue;
+}
+.greena:hover, .greena:focus{
+    color: forestgreen;
+}
+.orangea:hover, .orangea:focus{
+    color: orangered;
+}
+.blacka:hover, .blacka:focus{
+    color: black;
+}
+.darkreda:hover, darkreda:focus{
+    color: darkred;
+}
+.firebricka:hover, .firebricka:focus{
+    color: firebrick;
+}
+.darkorangea:hover, .darkorangea:focus{
+    color: darkorange;
+    
+}
+.indigoa:hover,.indigoa:focus{
+    color: indigo;
+}
+.pad{
+padding-top: 1%;
+    display: block;
+}
+
+
 .img-portfolio{
     width: 420px;
     height:300px;
