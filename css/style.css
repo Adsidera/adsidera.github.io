@@ -11,6 +11,7 @@ body {
 .big a:hover, .big a:focus{
     font-size: 1.4em;
     color: black;
+    text-decoration: none;
 }
 .leadfirst p{
     text-align: justify;
@@ -82,7 +83,11 @@ body {
     font-size: 1.5em;
     font-weight: 400;
 }
+img .img-portfolio{
 
+    width: auto;
+    height: 320px;
+}
 #curious{
     margin-left: 0;
     margin-bottom: -13%;
@@ -111,13 +116,14 @@ body {
 *  Portfolio  *
 **************/
 
-a{
+a, a:hover, a:focus{
     text-decoration: none;
     color: #333;
 }
  .bluea, .greena, .orangea, .blacka, .darkreda, .firebricka, .darkorangea, .indigoa{
     border-bottom: 1px dotted grey;
-    border-bottom-style: dashed;}
+    border-bottom-style: dashed;
+ }
 .big a:-webkit-any-link:hover, a:-webkit-any-link:focus{
     font-size: 1.4em;
 }
@@ -127,6 +133,7 @@ a{
     font-weight: 400;
     border-bottom: none;
 }
+
 .bluea:hover, .bluea:focus{
     color: midnightblue;
 }
@@ -157,15 +164,19 @@ padding-top: 1%;
     display: block;
 }
 
-
-.img-portfolio{
-    width: 420px;
-    height:300px;
-}
 .project{
     padding:0;
 }
-
+img.img-responsive.img-portfolio{
+    height: 300px;
+    width: 420px;
+}
+#btnContactUs{
+    margin-left: 5%;
+}
+.fa.fa-smile-o{
+    font-weight: 200;
+}
 /**************
 *    Footer   *
 **************/
@@ -221,7 +232,6 @@ footer p {
 .featurette-divider {
     margin: 80px 0;
 }
-
 .featurette {
     overflow: hidden;
 }
