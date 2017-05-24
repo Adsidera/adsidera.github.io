@@ -1,73 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="AdSidera Web Solutions">
-    <meta name="author" content="AdSideraWeb">
-
-    <title>AdSidera - Portfolio</title>
-    <link rel="icon" type="image/png" href="img/8-point-star.jpg">
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pattaya|Raleway:200,400|Roboto" rel="stylesheet">
-
-    <!-- FontAwesome -->
-    <script src="https://use.fontawesome.com/21a090d46f.js"></script>
-
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
-
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" id="logo" href="#">AdSidera</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#about">Who I am</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#services">Solutions</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+---
+layout: default
+---
 
     <!-- Full Width Image Header -->
 
@@ -112,130 +45,97 @@
 	    <p>I am a gentle feminist, proud member of <a href="http://rubymonstas.org/"><em>Rubymonstas Berlin</em></a> and volunteer developer to the <a href="https://diversitytickets.org/"><em>Diversity Ticket action</em></a>, supported by Travis CI<br></p>
 	    <p>I like to be goodhumoured, polite, generous and positive with colleagues, resilient and perfectionist</p>
 	    
-        </div>
+      </div>
 
-        <hr class="featurette-divider" id="portfolio"><br>
-
-        <!-- Second Featurette -->
-        <div class="featurette" >
+      <hr class="featurette-divider" id="portfolio"><br>
+      <!-- <div class="featurette"> --!>
             <!-- 1st Row of Projects -->
-            <div class="row" >
-                <div class="col-md-4 col-sm-4 col-lg-4 col-sx-12 project">
-
-                    <a href="http://www.entscheiderclub.de">
-                        <img class="img-responsive img-portfolio" src="img/Entscheiderclub.jpg" ></img>
-                    </a>
+	<div class=" gal-container photos">
+	 {% for photo in site.photos %}
+          <!-- First Image in Gallery -->
+          <div class="col-md-4 col-sm-6 col-xs-12 gal-item picture" >
+            <div class="box">
+              <!-- Thumbnail Image -->
+              <a class="pic" href="#" data-toggle="modal" data-target="#{{photo.photo_id}}">
+                <img src="{{photo.photo_path}}">
+              </a>
+              <!--- Modal -->
+              <div class="modal fade" id="{{photo.photo_id}}" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">X</span>
+                    </button>
+                    <div class="modal-body">
+                      <a href="{{photo.link}}"><img src="{{photo.photo_path}}"></a>
+                      <hr>
+                      <div class="container">
+                        <div class="box-modal">
+                          <h3>{{ photo.title }}</h3>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <p>{{photo.paragraph}}</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <h3>My Tasks</h3>
+                              <p>{{ photo.task }}</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <h3>Languages</h3>
+                              <p>{{ photo.languages }}</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <h3>Technologies</h3>
+                              <p>{{ photo.technologies }}</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <h3>Databases</h3>
+                              <p>{{ photo.databases }}</p>
+                            </div>
+                          </div>
+                          <br>
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <a href="{{ photo.link }}" target="_blank" >
+                                <button class="btn btn-lg btn-primary" >
+                                  See it live
+                                </button>
+                              </a>
+                            </div>
+                          </div>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-		 <div class="col-md-4 col-sm-4 col-lg-4 col-sx-12 project">
-                    <a href="http://www.paolorumetz.com">
-                        <img class="img-responsive img-portfolio" src="img/paolothumbnail.JPG"></img>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-4 col-lg-4 col-sx-12 project">
-                    <a href="https://adsidera.github.io/ptan.github.io/">
-                        <img class="img-responsive img-portfolio" src="img/tanovski.JPG"></img>
-                    </a>
-                </div>
+              </div>
             </div>
-            <!-- 2nd Row of Projects -->
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-lg-4 col-sx-12 project">
-                    <a href="http://freshobst.herokuapp.com"><img src="img/fothumb1.JPG" class="img-responsive img-portfolio"></img></a>
-                </div>
-                <div class="col-md-4 col-sm-4 col-lg-4 col-sx-12 project">
-                    <a href="#contact"><img src="http://placehold.it/420X300?text=THIS+CAN+BE+YOURS!"></img></a>
-                </div>
-                <div class="col-md-4 col-sm-4 col-lg-4 col-sx-12 project">
-                    <a href="#contact"><img src="http://placehold.it/420X300?text=THIS+CAN+BE+YOURS!"></img></a>
-                </div>
-
-            </div>
-            <div class="arrow arrowportfolio"><a href="#services"><i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i></a></div>
-            <br>
+          </div>
+	  {% endfor %}
+          <div class="arrow arrowportfolio">
+	    <a href="#services">
+	      <i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i>
+	    </a>
+	  </div>
+          <br>
         </div> <!--- End Second Featurette -->
 
-
         <hr class="featurette-divider" id="services"><br>
-
-<!-- Third Featurette -->
-        <div class="featurette">
-            <!-- Other Services -->
-            <img class="featurette-image img-circle img-responsive pull-left" src="img/network.jpg">
-            <h1 class="featurette-heading">Web Development
-                <span class="text-muted">is a team development</span>
-            </h1>
-            <p class="lead">Being a teamplayer, someone who can spot issues and solve them, someone who can have and share ideas, someone who is enthusiastic about continuous learning, and someone who dares also take some challenging tasks...and someone who is also pleasant and light to collaborate with.<br> That's me <i class="fa fa-smile-o" aria-hidden="true"></i></p>
-<p class="lead">I am available for collaborating to your projects, be they small or more audacious, </p>
-        </div>
-
-
         <!-- Third Featurette -->
+          {% include section.html %}
         <hr class="featurette-divider" id="contact"><br>
-        <div class="featurette">
-            <p class="lead"><i>Please feel free to use the form below for any info, quote, request, help concerning your site or project</i></p>
-            <form id="contact-form" action="https://formspree.io/annamaria.costalonga@gmail.com" method="post">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" name="name" />
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <div class="input-group">
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                </span>
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" name="_replyto"/></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input id="subject" name="subject" class="form-control" required="required" name="subject"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="name">Message</label>
-                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message" name="message"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <button type="submit" class="btn btn-skin pull-right" id="btnContactUs" value="Send">
-                            Send Contact Request</button>
-                    </div>
-                </div>
-                </form>
-        </div>
+          {% include contact.html %}
 
         <!-- Second Featurette -->
         <hr class="featurette-divider">
     </div>
-        <!-- Footer -->
-        <footer>
 
-            <div class="footy">
-                    <h4 id="impressum">Impressum</h4>
-                    <p>Anna Costalonga<br>Lilienstr.27<br>04315 Leipzig<br>Germany</p>
-
-                    <p id="copy">Copyright &copy; Anna Costalonga 2016</p>
-                    <a href="https://twitter.com/AdSidera" class="twitter-follow-button" data-show-count="false">Follow @AdSidera</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-            <a href="https://github.com/Adsidera"><img src="img/GitHub-Mark-32px.png"></a>
-         </div>
-        </footer>
-
-
-    <!-- /.container -->
-    <!-- Constellation JS effect -->
-    <script src="js/TweenLite.min.js"></script>
-    <script src="js/EasePack.min.js"></script>
-    <script src="js/demo.js"></script>
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
