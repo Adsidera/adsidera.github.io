@@ -1,11 +1,12 @@
 ---
-title: Tanovski Services for Publishers
-photo_path: img/tanovski.JPG
-link: https://adsidera.github.io/ptan.github.io/
-photo_id: 4
-paragraph: A simple freelance work with Bootstrap
-task: I used a simple but effective Bootstrap sidebar component, plus sticky footer with logo
-languages: HTML5, CSS3, Bootstrap
-technologies: Github pages
-databases: not required
+title: Diversity Ticket App
+photo_path: img/diversity.jpg
+link: https://diversitytickets.org/ 
+photo_id: 5
+paragraph: A Rails app created by RubyMonstas and sponsored by Travis
+task:  I collaborate as volunteer developer to the Diversity Ticket action promoted by Travis CI I help enhancing and fixing the Rails app
+languages: Ruby, Ruby on Rails, Javascript, Bootstrap
+technologies: Devise, CanCanCan, Mandrill 
+databases: SQL
+
 ---

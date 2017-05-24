@@ -1,12 +1,11 @@
 ---
-title: Diversity Ticket App
-photo_path: img/diversity.jpg
-link: https://diversitytickets.org/ 
-photo_id: 5
-paragraph: A Rails app created by RubyMonstas and sponsored by Travis
-task:  I collaborate as volunteer developer to the Diversity Ticket action promoted by Travis CI I help enhancing and fixing the Rails app
-languages: Ruby, Ruby on Rails, Javascript, Bootstrap
-technologies: Devise, CanCanCan, Mandrill 
-databases: SQL
-
+title: The Error Logs - Collaboration
+photo_path: img/theerrorlogs.JPG
+link: http://www.theerrorlogs.com/
+photo_id: 6
+paragraph: A demo Rails app for testing, created by coursemate Kenneth Gould
+task: I collaborated in fixing and enhancing the app, the purpose of it was though to have a platform to experiment with testing
+languages: Ruby on Rails, Devise
+technologies: BDD testing
+databases: Postgres
 ---

@@ -1,11 +1,11 @@
 ---
-title: The Error Logs - Collaboration
-photo_path: img/theerrorlogs.JPG
-link: http://www.theerrorlogs.com/
-photo_id: 6
-paragraph: A demo Rails app for testing, created by coursemate Kenneth Gould
-task: I collaborated in fixing and enhancing the app, the purpose of it was though to have a platform to experiment with testing
-languages: Ruby on Rails, Devise
-technologies: BDD testing
-databases: Postgres
+title: Tanovski Services for Publishers
+photo_path: img/tanovski.JPG
+link: https://adsidera.github.io/ptan.github.io/
+photo_id: 4
+paragraph: A simple freelance work with Bootstrap
+task: I used a simple but effective Bootstrap sidebar component, plus sticky footer with logo
+languages: HTML5, CSS3, Bootstrap
+technologies: Github pages
+databases: not required
 ---
