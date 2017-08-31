@@ -1,3 +1,27 @@
 ---
 layout: default
 ---
+<section id="blog-index">
+      <h1 class="text-center display-4">Articles & Stuff</h1>
+      <hr></hr>
+      {% for post in site.posts %}
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <small><em>Published at {{ post.date | date_to_string }} by {{ post.author }}</em></small>
+            <br><br>
+            <p>{{ post.excerpt }} </p>
+            <p><em><a href="{{ post.url }}">Read more...</a></em></p>
+          </div>
+          <div class="col-sm-3"></div>
+        </div class="row">
+        <div class="row">
+          <div class="col-sm-5"></div>
+          <div class="col-sm-2">
+            <img class="img img-responsive stars" src="{{ site.url }}/post_images/5stars.svg" style="height:50px;"></img>
+          </div>
+          <div class="col-sm-5"></div>
+        </div>
+      {% endfor %}
+</section>
