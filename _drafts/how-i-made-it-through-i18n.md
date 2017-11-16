@@ -4,9 +4,7 @@ title: How I cooked I18n in a Rails 5 Devise App
 date: 2017-08-31 00:00:00
 author: Adsidera
 excerpt: >-
-  Hey, this is my very first blog post with Jekyll, I wonder if it works ;) At
-  vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-  praesentium voluptatum deleniti atque corrupti quos dolores et quas
+  Where I tell you my recipe for cooking I18n into your Rails 5 App, with or notwithstanding Devise
 ---
 
 
