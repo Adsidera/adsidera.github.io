@@ -14,7 +14,8 @@ OK, I am still a lady developer, so I should know how to cook, right? ;)
 
 INGREDIENTS
 
-- Rails 5 App containing:<br>&nbsp; &nbsp;Devise Gem<br>&nbsp; &nbsp;User model<br>Official Ruby Internationalization Guide
+- Rails 5 App containing:<br>&nbsp; &nbsp;Devise Gem<br>&nbsp; &nbsp;User model<br>
+- Official Ruby Internationalization Guide
 - This Stackoverflow question
 - This Stackoverflow comment to the above question
 
