@@ -1,5 +1,5 @@
 ---
-photo_path: img/operacopro.png
+photo_path: img/operacopro1.png
 link: http://www.operacopro.com
 photo_id: 0
 title: Opera Co-Pro Ltd Platform
