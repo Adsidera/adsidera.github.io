@@ -3,7 +3,7 @@ title: Freshobst
 photo_path: img/fothumb.JPG
 link: https://freshobst.herokuapp.com
 photo_id: 1
-
+description: A demo online shop built with Rails
 paragraph: A demo online shop, a Rails app project built while attending the CareerFoundry GmbH school
 
 task: I had to build the app, relying on Bootstrap, Ruby on Rails components, Javascript, some JQuery and some Angular
