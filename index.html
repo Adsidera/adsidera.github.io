@@ -51,7 +51,7 @@ layout: default
       <!-- <div class="featurette"> --!>
             <!-- 1st Row of Projects -->
 	<div class=" gal-container photos">
-	 {% for photo in site.photos %}
+	 {% for photo in site.photos | sort: 'date' %}
           <!-- First Image in Gallery -->
           <div class="col-md-4 col-sm-6 col-xs-12 gal-item picture" >
             <div class="box">
