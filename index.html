@@ -50,8 +50,9 @@ layout: default
       <hr class="featurette-divider" id="portfolio"><br>
       <!-- <div class="featurette"> --!>
             <!-- 1st Row of Projects -->
+    {% assign sorted_photos = site.photos | sort: "id" | reverse %}
 	<div class=" gal-container photos">
-	 {% for photo in site.photos | sort: 'date' %}
+	 {% for photo in site.photos  %}
           <!-- First Image in Gallery -->
           <div class="col-md-4 col-sm-6 col-xs-12 gal-item picture" >
             <div class="box">
