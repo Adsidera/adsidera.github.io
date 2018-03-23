@@ -239,7 +239,7 @@ img.img-responsive.img-portfolio{
 
 .pic:after{
 
-        content: attr(data-content);
+    content: attr(data-content);
 
 	background-color: rgba(16, 46, 75, 0.9);
 
