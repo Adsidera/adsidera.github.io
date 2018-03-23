@@ -2,7 +2,7 @@
 title: Freshobst
 photo_path: img/fothumb.JPG
 link: https://freshobst.herokuapp.com
-photo_id: 3
+photo_id: 1
 
 paragraph: A demo online shop, a Rails app project built while attending the CareerFoundry GmbH school
 
